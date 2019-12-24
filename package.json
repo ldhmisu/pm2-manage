@@ -14,7 +14,7 @@
   "config": {},
   "apps": [
     {
-      "script": "client.js",
+      "script": "lib/pm2client.js",
       "merge_logs": true,
       "max_memory_restart": "300M"
     }
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/ldhmisu/pm2-manage#readme",
   "dependencies": {
+    "axon": "^2.0.3",
     "koa": "^2.11.0",
     "pm2": "^4.2.1",
     "pmx": "^1.6.7"
