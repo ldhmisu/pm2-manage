@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "pm2-manage": "bin/index.js"
+  },
   "scripts": {
     "install": "pm2 install .",
-    "start": "node server.js"
+    "link": "npm link",
+    "start": "node test/server.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +18,7 @@
   "config": {},
   "apps": [
     {
-      "script": "lib/pm2client.js",
+      "script": "lib/pm2app.js",
       "merge_logs": true,
       "max_memory_restart": "300M"
     }
