@@ -1,15 +1,15 @@
 {
   "name": "pm2-manage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
     "pm2-manage": "bin/index.js"
   },
   "scripts": {
-    "install": "pm2 install .",
+    "pm2-install": "pm2 install .",
     "link": "npm link",
-    "start": "node test/server.js"
+    "test": "node test/manager.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,12 @@
       "merge_logs": true,
       "max_memory_restart": "300M"
     }
+  ],
+  "files": [
+    "bin",
+    "lib",
+    "index.js",
+    "package.json"
   ],
   "author": "liangdonghui",
   "license": "MIT",
