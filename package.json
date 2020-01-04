@@ -9,7 +9,7 @@
   "scripts": {
     "pm2-install": "pm2 install .",
     "link": "npm link",
-    "test": "node test/manager.js"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
