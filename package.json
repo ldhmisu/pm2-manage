@@ -1,6 +1,6 @@
 {
   "name": "pm2-manage",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/ldhmisu/pm2-manage.git"
   },
-  "config": {},
+  "config": {
+    "socket_port": 12333,
+    "push_interval": 2000
+  },
   "apps": [
     {
       "script": "lib/pm2app.js",
