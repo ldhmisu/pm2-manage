@@ -1,7 +1,7 @@
 const Manager = require('../lib/manager');
 
 function main () {
-    let manager = new Manager({pm2clients: [ '10.10.3.64' ]});
+    let manager = new Manager({pm2clients: [ '127.0.0.1' ]});
     manager.startServer();
 }
 

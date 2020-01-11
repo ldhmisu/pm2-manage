@@ -7,9 +7,10 @@
     "pm2-manage": "bin/index.js"
   },
   "scripts": {
-    "pm2-install": "pm2 install .",
     "link": "npm link",
-    "test": "node test/index.js"
+    "test-manager": "node test/manager.js",
+    "test-pm2app": "pm2 kill && pm2 start test/pm2app.js --name test && pm2 install .",
+    "test": "npm run test-pm2app && npm run test-manager"
   },
   "repository": {
     "type": "git",
